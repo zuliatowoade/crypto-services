@@ -1,4 +1,4 @@
-package com.workshop.serviceb.config;
+package com.workshop.servicea.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
