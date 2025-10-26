@@ -7,7 +7,7 @@ import java.util.*;
 @RestController
 public class TransactionController {
 
-    @GetMapping("/process")
+    @GetMapping("/api/transaction")
     public Map<String, Object> processTransaction() {
         Map<String, Object> response = new HashMap<>();
         response.put("confirmationNumber", UUID.randomUUID().toString());
