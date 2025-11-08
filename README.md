@@ -19,7 +19,7 @@ cd service-a
 docker build -t crypto-svc-one .
 docker run --rm -p 8081:8080 crypto-svc-one
 ```
-Visit: http://localhost:8081/process
+Visit: http://localhost:8081/api/transaction
 
 Build and run Service B (in a separate terminal):
 ```bash
@@ -27,7 +27,7 @@ cd service-b
 docker build -t crypto-svc-two .
 docker run --rm -p 8082:8080 crypto-svc-two
 ```
-Visit: http://localhost:8082/process
+Visit: http://localhost:8082/api/transaction
 
 **Notes for attendees**
 - The two services are intentionally separate. When running locally, use ports 8081 (service-a) and 8082 (service-b) to avoid conflicts.
