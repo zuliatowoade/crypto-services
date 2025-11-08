@@ -13,7 +13,10 @@ public class CorsConfig {
             @Override
             public void addCorsMappings(CorsRegistry registry) {
                 registry.addMapping("/**")
-                        .allowedOrigins("https://crypto-wallet-fragrant-cherry-3610.fly.dev")
+                        .allowedOrigins(
+                            "https://crypto-wallet-fragrant-cherry-3610.fly.dev",
+                            "http://localhost:3000"
+                        )
                         .allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS")
                         .allowedHeaders("*")
                         .allowCredentials(true)
