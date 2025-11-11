@@ -1,4 +1,4 @@
-app = "crypto-svc-one"
+app = "crypto-svc-v1"
 primary_region = "iad"
 
 [build]
